@@ -1,0 +1,17 @@
+Assets\Logo.png
+Assets\SmallLogo.png
+Assets\SplashScreen.png
+Assets\StoreLogo.png
+App.xaml
+Common\StandardStyles.xaml
+GamePage.xaml
+Content\ballBlue.xnb
+Content\element_blue_rectangle_glossy.xnb
+Content\element_green_rectangle_glossy.xnb
+Content\element_grey_rectangle_glossy.xnb
+Content\element_purple_rectangle_glossy.xnb
+Content\element_red_rectangle_glossy.xnb
+Content\element_yellow_rectangle_glossy.xnb
+Content\paddleRed.xnb
+Content\SegoeUI_48.xnb
+Content\SegoeUI_72.xnb

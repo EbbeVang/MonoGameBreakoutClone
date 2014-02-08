@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>VISION</Machine>
+    <WindowsUser>Ebbe Vang</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\bin\Windows8\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\bin\Windows8\Debug\MonoGameBreakoutClone.exe">
+      <PackagePath>MonoGameBreakoutClone.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\bin\Windows8\Debug\MonoGameBreakoutClone.pdb">
+      <PackagePath>MonoGameBreakoutClone.pdb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\MonoGame.Framework.dll">
+      <PackagePath>MonoGame.Framework.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.Direct2D1.dll">
+      <PackagePath>SharpDX.Direct2D1.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.Direct3D11.dll">
+      <PackagePath>SharpDX.Direct3D11.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.dll">
+      <PackagePath>SharpDX.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.DXGI.dll">
+      <PackagePath>SharpDX.DXGI.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.MediaFoundation.dll">
+      <PackagePath>SharpDX.MediaFoundation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.XAudio2.dll">
+      <PackagePath>SharpDX.XAudio2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.XInput.dll">
+      <PackagePath>SharpDX.XInput.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\Content\ballBlue.xnb">
+      <PackagePath>Content\ballBlue.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\Content\element_blue_rectangle_glossy.xnb">
+      <PackagePath>Content\element_blue_rectangle_glossy.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\Content\element_green_rectangle_glossy.xnb">
+      <PackagePath>Content\element_green_rectangle_glossy.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\Content\element_grey_rectangle_glossy.xnb">
+      <PackagePath>Content\element_grey_rectangle_glossy.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\Content\element_purple_rectangle_glossy.xnb">
+      <PackagePath>Content\element_purple_rectangle_glossy.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\Content\element_red_rectangle_glossy.xnb">
+      <PackagePath>Content\element_red_rectangle_glossy.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\Content\element_yellow_rectangle_glossy.xnb">
+      <PackagePath>Content\element_yellow_rectangle_glossy.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\Content\paddleRed.xnb">
+      <PackagePath>Content\paddleRed.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\Content\SegoeUI_48.xnb">
+      <PackagePath>Content\SegoeUI_48.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\Content\SegoeUI_72.xnb">
+      <PackagePath>Content\SegoeUI_72.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\bin\Windows8\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\bin\Windows8\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\bin\Windows8\Debug\GamePage.xaml">
+      <PackagePath>GamePage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\ebbe vang\documents\visual studio 2012\Projects\MonoGameBreakoutClone\MonoGameBreakoutClone\bin\Windows8\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

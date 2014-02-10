@@ -130,6 +130,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Ball.cs" />
+    <Compile Include="Block.cs" />
     <Compile Include="GameFramework\BenchmarkObject.cs" />
     <Compile Include="GameFramework\EnvironmentGraphics.cs" />
     <Compile Include="GameFramework\GameHelper.cs" />
@@ -142,6 +144,7 @@
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="BreakoutClone.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

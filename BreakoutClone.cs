@@ -1,16 +1,21 @@
+using Windows.UI.Xaml.Controls;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using MonoGameBreakoutClone.GameFramework;
 
 namespace MonoGameBreakoutClone
 {
     /// <summary>
     /// This is the main type for your game
     /// </summary>
-    public class BreakoutClone : Game
+    public class BreakoutClone : GameHost
     {
         GraphicsDeviceManager _graphics;
         SpriteBatch _spriteBatch;
-
+        private SpriteFont _segoe;
+        private Texture2D playerTexture2D;
+        private Texture2D ballTexture2D;
+        private Texture2D blockTexture2D;
         public BreakoutClone()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -38,8 +43,34 @@ namespace MonoGameBreakoutClone
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            _segoe = Content.Load<SpriteFont>("SegoeUI_48");
             // TODO: use this.Content to load your game content here
+
+            playerTexture2D = Content.Load<Texture2D>("PaddleRed");
+            ballTexture2D = Content.Load<Texture2D>("ballBlue");
+            blockTexture2D = Content.Load<Texture2D>("element_blue_rectangle_glossy");
+            SetGame();
+        }
+
+        public void SetGame()
+        {
+          //  TextObject t = new TextObject(this, _segoe, new Vector2(900,50));
+          //  t.Text = "Score: 0";
+          //  GameObjects.Add(t);
+
+            //create player
+            Player player = new Player(this, new Vector2(800,800), playerTexture2D);
+            GameObjects.Add(player);
+
+            // create ball
+            Ball  ball = new Ball(this, new Vector2(100,100), ballTexture2D);
+            GameObjects.Add(ball);
+
+            for (int i = 0; i < 12; i++)
+            {
+                Block b = new Block(this, new Vector2(100+i*80, 100), blockTexture2D );
+                GameObjects.Add(b);
+            }
         }
 
         /// <summary>
@@ -59,7 +90,7 @@ namespace MonoGameBreakoutClone
         protected override void Update(GameTime gameTime)
         {
             // TODO: Add your update logic here
-
+            UpdateAll(gameTime);
             base.Update(gameTime);
         }
 
@@ -72,8 +103,15 @@ namespace MonoGameBreakoutClone
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
-
+            _spriteBatch.Begin();
+            foreach (SpriteObject spriteObject in GameObjects)
+            {
+                spriteObject.Draw(gameTime, _spriteBatch);
+            }
+            _spriteBatch.End();
             base.Draw(gameTime);
         }
+
+       
     }
 }

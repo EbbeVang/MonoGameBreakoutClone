@@ -44,18 +44,29 @@ namespace MonoGameBreakoutClone
             Point ballCornerB = new Point((int)PositionX + (int)BoundingBox.Width, (int)PositionY);
             Point ballCornerC = new Point((int)PositionX, (int)PositionY + BoundingBox.Height);
             Point ballCornerD = new Point((int)PositionX + (int)BoundingBox.Width,(int)PositionY + (int)BoundingBox.Height);
-            foreach (SpriteObject spriteObject in Game.GameObjects)
-            {
-                if (spriteObject.GetType() != typeof (Ball))
+            
+                for (int i = 0; i < Game.GameObjects.Count; i++)
                 {
-                    if (spriteObject.BoundingBox.Contains(ballCornerA) || spriteObject.BoundingBox.Contains(ballCornerB) ||
-                        spriteObject.BoundingBox.Contains(ballCornerC) || spriteObject.BoundingBox.Contains(ballCornerD))
+                    SpriteObject spriteObject = (SpriteObject)Game.GameObjects[i];
+                    if (spriteObject.BoundingBox.Contains(ballCornerA) ||
+                        spriteObject.BoundingBox.Contains(ballCornerB) ||
+                        spriteObject.BoundingBox.Contains(ballCornerC) ||
+                        spriteObject.BoundingBox.Contains(ballCornerD))
                     {
-                        _VelocityY *= -1;
+                        if (spriteObject.GetType() == typeof (Player))
+                            _VelocityY *= -1;
+
+                        if (spriteObject.GetType() == typeof (Block))
+                        {
+                            _VelocityY *= -1;
+                            Game.GameObjects.Remove(spriteObject);
+                        }
+                        
                     }
+
                 }
                 
-            }
+            
             if (PositionX < 0) _VelocityX *= -1;
             if (PositionX > 1600) _VelocityX *= -1;
             if (PositionY < 0) _VelocityY *= -1;

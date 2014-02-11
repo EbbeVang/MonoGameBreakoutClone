@@ -114,3 +114,11 @@ C:\Users\ebva.RHS\Documents\Visual Studio 2012\Projects\BreakOut\obj\Debug\Sharp
 C:\Users\ebva.RHS\Documents\Visual Studio 2012\Projects\BreakOut\obj\Debug\qualifiers.txt
 C:\Users\ebva.RHS\Documents\Visual Studio 2012\Projects\BreakOut\obj\Debug\qualifiers.txt.intermediate
 C:\Users\ebva.RHS\Documents\Visual Studio 2012\Projects\BreakOut\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\ebva.RHS\Documents\Visual Studio 2012\Projects\BreakOut\obj\Debug\SharpDX\layout.resfiles
+C:\Users\ebva.RHS\Documents\Visual Studio 2012\Projects\BreakOut\obj\Debug\SharpDX\layout.resfiles.intermediate
+C:\Users\ebva.RHS\Documents\Visual Studio 2012\Projects\BreakOut\obj\Debug\SharpDX\Resources.resfiles
+C:\Users\ebva.RHS\Documents\Visual Studio 2012\Projects\BreakOut\obj\Debug\SharpDX\Resources.resfiles.intermediate
+C:\Users\ebva.RHS\Documents\Visual Studio 2012\Projects\BreakOut\obj\Debug\SharpDX\pri.resfiles
+C:\Users\ebva.RHS\Documents\Visual Studio 2012\Projects\BreakOut\obj\Debug\SharpDX\pri.resfiles.intermediate
+C:\Users\ebva.RHS\Documents\Visual Studio 2012\Projects\BreakOut\obj\Debug\SharpDX\priconfig.xml
+C:\Users\ebva.RHS\Documents\Visual Studio 2012\Projects\BreakOut\obj\Debug\SharpDX\priconfig.xml.intermediate

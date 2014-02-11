@@ -11,8 +11,9 @@ namespace MonoGameBreakoutClone
 {
     class Ball : SpriteObject
     {
+        private Score score;
         private float _VelocityX = 4f;
-        private float _VelocityY = 4f;
+        private float _VelocityY = -4f;
 
          public Ball(GameHost game)
             : base(game)
@@ -30,11 +31,12 @@ namespace MonoGameBreakoutClone
             Position = position;
         }
 
-        public Ball(GameHost game, Vector2 position, Texture2D texture)
+        public Ball(GameHost game, Vector2 position, Texture2D texture, Score score)
             : this(game, position)
         {
             // Store the provided texture
             SpriteTexture = texture;
+            this.score = score;
         }
 
         public override void Update(GameTime gameTime)
@@ -60,6 +62,7 @@ namespace MonoGameBreakoutClone
                         {
                             _VelocityY *= -1;
                             Game.GameObjects.Remove(spriteObject);
+                            score.IncrementScore();
                         }
                         
                     }

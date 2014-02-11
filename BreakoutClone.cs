@@ -19,6 +19,7 @@ namespace MonoGameBreakoutClone
         private Texture2D blockTexture2Dgreen;
         private Texture2D blockTexture2Dgrey;
         private Texture2D blockTexture2Dpurple;
+        private Score score; 
         public BreakoutClone()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -60,18 +61,14 @@ namespace MonoGameBreakoutClone
 
         public void SetGame()
         {
-          //  TextObject t = new TextObject(this, _segoe, new Vector2(900,50));
-          //  t.Text = "Score: 0";
-          //  GameObjects.Add(t);
+            
 
             //create player
             Player player = new Player(this, new Vector2(800,800), playerTexture2D);
             GameObjects.Add(player);
 
             // create ball
-            Ball  ball = new Ball(this, new Vector2(100,400), ballTexture2D);
-            GameObjects.Add(ball);
-
+            
             for (int i = 0; i < 25; i++)
             {
                 Block b = new Block(this, new Vector2(100+i*60, 100), blockTexture2Dblue );
@@ -98,6 +95,13 @@ namespace MonoGameBreakoutClone
                 Block b8 = new Block(this, new Vector2(100 + i * 60, 320), blockTexture2Dpurple);
                 GameObjects.Add(b8);
             }
+            score = new Score(this, _segoe, new Vector2(900, 50));
+            score.Text = "Score: 0";
+            GameObjects.Add(score);
+
+            Ball ball = new Ball(this, new Vector2(100, 400), ballTexture2D, score);
+            GameObjects.Add(ball);
+
         }
 
         /// <summary>
@@ -117,6 +121,7 @@ namespace MonoGameBreakoutClone
         protected override void Update(GameTime gameTime)
         {
             // TODO: Add your update logic here
+            
             UpdateAll(gameTime);
             base.Update(gameTime);
         }

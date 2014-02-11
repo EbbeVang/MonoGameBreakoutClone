@@ -15,7 +15,10 @@ namespace MonoGameBreakoutClone
         private SpriteFont _segoe;
         private Texture2D playerTexture2D;
         private Texture2D ballTexture2D;
-        private Texture2D blockTexture2D;
+        private Texture2D blockTexture2Dblue;
+        private Texture2D blockTexture2Dgreen;
+        private Texture2D blockTexture2Dgrey;
+        private Texture2D blockTexture2Dpurple;
         public BreakoutClone()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -48,7 +51,10 @@ namespace MonoGameBreakoutClone
 
             playerTexture2D = Content.Load<Texture2D>("PaddleRed");
             ballTexture2D = Content.Load<Texture2D>("ballBlue");
-            blockTexture2D = Content.Load<Texture2D>("element_blue_rectangle_glossy");
+            blockTexture2Dblue = Content.Load<Texture2D>("element_blue_rectangle_glossy");
+            blockTexture2Dgreen = Content.Load<Texture2D>("element_green_rectangle_glossy");
+            blockTexture2Dgrey = Content.Load<Texture2D>("element_grey_rectangle_glossy");
+            blockTexture2Dpurple = Content.Load<Texture2D>("element_purple_rectangle_glossy");
             SetGame();
         }
 
@@ -63,13 +69,34 @@ namespace MonoGameBreakoutClone
             GameObjects.Add(player);
 
             // create ball
-            Ball  ball = new Ball(this, new Vector2(100,100), ballTexture2D);
+            Ball  ball = new Ball(this, new Vector2(100,400), ballTexture2D);
             GameObjects.Add(ball);
 
-            for (int i = 0; i < 12; i++)
+            for (int i = 0; i < 25; i++)
             {
-                Block b = new Block(this, new Vector2(100+i*80, 100), blockTexture2D );
+                Block b = new Block(this, new Vector2(100+i*60, 100), blockTexture2Dblue );
                 GameObjects.Add(b);
+
+                Block b2 = new Block(this, new Vector2(100+i*60, 130), blockTexture2Dgrey );
+                GameObjects.Add(b2);
+
+                Block b3 = new Block(this, new Vector2(100+i*60, 160), blockTexture2Dgreen );
+                GameObjects.Add(b3);
+
+                Block b4 = new Block(this, new Vector2(100+i*60, 190), blockTexture2Dpurple );
+                GameObjects.Add(b4);
+
+                Block b5 = new Block(this, new Vector2(100 + i * 60, 210), blockTexture2Dblue);
+                GameObjects.Add(b5);
+
+                Block b6 = new Block(this, new Vector2(100 + i * 60, 240), blockTexture2Dgrey);
+                GameObjects.Add(b6);
+
+                Block b7 = new Block(this, new Vector2(100 + i * 60, 270), blockTexture2Dgreen);
+                GameObjects.Add(b7);
+
+                Block b8 = new Block(this, new Vector2(100 + i * 60, 320), blockTexture2Dpurple);
+                GameObjects.Add(b8);
             }
         }
 
